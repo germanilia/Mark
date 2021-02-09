@@ -1,0 +1,8 @@
+# Build Command
+docker build -t dockeragent:latest .
+
+# Start Command
+
+docker run -e AZP_URL=<Azure DevOps instance> -e AZP_TOKEN=<PAT token> -e AZP_AGENT_NAME=mydockeragent dockeragent:latest
+
+docker build . -f windows_build_agent.4.7.Dockerfile -t iliagerman/mabat-halal:windows.4.7
